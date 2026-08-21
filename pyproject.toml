@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "infrared"
+version = "0.1.0"
+description = "infrared"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+    {name = "Vincent Naujoks"}
+]
+
+dependencies = []

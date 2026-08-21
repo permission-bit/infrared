@@ -35,4 +35,68 @@ def home_keys():
                 format=serialization.PublicFormat.SubjectPublicKeyInfo
             )
         )
-home_keys()
+#home_keys()
+
+def cwd_keys():
+    path = Path.cwd()
+
+    PUBLIC_KEY_PATH = path/f"public_key.pem"
+    PRIVATE_KEY_PATH = path/f"private_key.pem"
+
+    private_key = rsa.generate_private_key(
+        public_exponent=65537,
+        key_size=4096
+    )
+
+    public_key = private_key.public_key()
+
+    with open(PRIVATE_KEY_PATH, "wb") as f:
+        f.write(
+            private_key.private_bytes(
+                encoding=serialization.Encoding.PEM,
+                format=serialization.PrivateFormat.PKCS8,
+                encryption_algorithm=serialization.NoEncryption()
+            )
+        )
+
+    with open(PUBLIC_KEY_PATH, "wb") as f:
+        f.write(
+            public_key.public_bytes(
+                encoding=serialization.Encoding.PEM,
+                format=serialization.PublicFormat.SubjectPublicKeyInfo
+            )
+        )
+
+# cwd_keys()
+
+def neighbor_keys():
+    path = Path(__file__).resolve().parent
+
+    PUBLIC_KEY_PATH = path/f"public_key.pem"
+    PRIVATE_KEY_PATH = path/f"private_key.pem"
+
+    private_key = rsa.generate_private_key(
+        public_exponent=65537,
+        key_size=4096
+    )
+
+    public_key = private_key.public_key()
+
+    with open(PRIVATE_KEY_PATH, "wb") as f:
+        f.write(
+            private_key.private_bytes(
+                encoding=serialization.Encoding.PEM,
+                format=serialization.PrivateFormat.PKCS8,
+                encryption_algorithm=serialization.NoEncryption()
+            )
+        )
+
+    with open(PUBLIC_KEY_PATH, "wb") as f:
+        f.write(
+            public_key.public_bytes(
+                encoding=serialization.Encoding.PEM,
+                format=serialization.PublicFormat.SubjectPublicKeyInfo
+            )
+        )
+
+neighbor_keys()

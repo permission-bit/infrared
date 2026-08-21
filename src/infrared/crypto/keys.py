@@ -67,7 +67,7 @@ def cwd_keys():
             )
         )
 
-# cwd_keys()
+cwd_keys()
 
 def neighbor_keys():
     path = Path(__file__).resolve().parent
@@ -130,4 +130,4 @@ def specific_keys(path):
             )
         )
 
-specific_keys(Path.cwd())
+# specific_keys(Path.cwd())

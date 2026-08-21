@@ -12,7 +12,7 @@ authors = [
     {name = "Vincent"}
 ]
 
-dependencies = []
+dependencies = [cryptography]
 
 [tool.setuptools.packages.find]
 where = ["src"]

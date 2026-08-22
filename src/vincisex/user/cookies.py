@@ -57,5 +57,6 @@ class CookieGrabber:
         print(f"\nGespeichert: {filename}")
 
 
-if __name__ == "__main__":
+"""
     CookieGrabber().save_json()
+"""

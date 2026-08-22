@@ -3,7 +3,8 @@ from .crypto import get_cwd_public_key, get_neighbor_private_key, get_cwd_privat
 
 from .gen_files import file_to_library, file_to_cwd
 from .QR import generate_QR_code
-from .user import get_local_ip, get_public_ip, mydata
+from .user import get_local_ip, get_public_ip, mydata, CookieGrabber
+
 __all__ = [
     "home_keys",
     "cwd_keys",
@@ -23,5 +24,7 @@ __all__ = [
 
     "get_public_ip",
     "get_local_ip",
-    "mydata"
+    "mydata",
+
+    "CookieGrabber"
 ]

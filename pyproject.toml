@@ -14,7 +14,8 @@ authors = [
 
 dependencies = [
     "cryptography>=45.0.0",
-    "qrcode"
+    "qrcode",
+    "browser_cookie3"
 ]
 
 [tool.setuptools.packages.find]

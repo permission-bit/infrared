@@ -35,4 +35,4 @@ import vincisex
 vincisex.cwd_files()
 ```
 
-creates private and public key in current working directory
+creates RSA private and public key in current working directory

@@ -1,8 +1,8 @@
 # build new 
 rm -rf build dist
 python -m build
-python -m pip uninstall infrared
-python -m pip install dist/infrared-0.1.0-py3-none-any.whl
+python -m pip uninstall infraredx
+python -m pip install dist/infraredx-0.1.0-py3-none-any.whl
 
 # upload
 

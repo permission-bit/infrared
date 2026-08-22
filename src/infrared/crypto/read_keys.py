@@ -9,12 +9,6 @@ from cryptography.hazmat.primitives import serialization, hashes
 from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
 
 
-MAGIC = b"INFRARED"
-VERSION = 1
-NONCE_SIZE = 12
-CHUNK_SIZE = 1024 * 1024
-
-print(Path.cwd())
 current_path = Path.cwd()
 CURRENT_PUBLIC_KEY_PATH = current_path/f"public_key.pem"
 CURRENT_PRIVATE_KEY_PATH = current_path/f"private_key.pem"
@@ -34,7 +28,6 @@ def get_cwd_public_key():
         return key
     
 
-print(get_cwd_public_key())
 
 def get_cwd_private_key():
 
@@ -48,7 +41,6 @@ def get_cwd_private_key():
         return key
     
 
-print(get_cwd_private_key())
 
 #----------------------------
 
@@ -63,7 +55,6 @@ def get_neighbor_public_key():
         return key
     
 
-print(get_neighbor_public_key())
 
 def get_neighbor_private_key():
 
@@ -77,7 +68,6 @@ def get_neighbor_private_key():
         return key
     
 
-print(get_neighbor_private_key())
 
 #----------------------------
 
@@ -90,7 +80,6 @@ def get_specific_public_key(path):
         return key
     
 
-print(get_specific_public_key("public_key.pem"))
 
 def get_specific_private_key(path):
 
@@ -102,6 +91,5 @@ def get_specific_private_key(path):
         return key
     
 
-print(get_specific_private_key("private_key.pem"))
     
 

@@ -35,7 +35,6 @@ def home_keys():
                 format=serialization.PublicFormat.SubjectPublicKeyInfo
             )
         )
-#home_keys()
 
 def cwd_keys():
     path = Path.cwd()
@@ -67,7 +66,6 @@ def cwd_keys():
             )
         )
 
-cwd_keys()
 
 def neighbor_keys():
     path = Path(__file__).resolve().parent
@@ -99,8 +97,6 @@ def neighbor_keys():
             )
         )
 
-#neighbor_keys()
-
 def specific_keys(path):
 
     PUBLIC_KEY_PATH = path/f"public_key.pem"
@@ -130,4 +126,3 @@ def specific_keys(path):
             )
         )
 
-# specific_keys(Path.cwd())

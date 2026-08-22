@@ -1,4 +1,4 @@
-from .crypto import home_keys, cwd_keys, specific_keys
+from .crypto import home_keys, cwd_keys, specific_keys, SecureFileCryptoStream
 from .crypto import get_cwd_public_key, get_neighbor_private_key, get_cwd_private_key, get_neighbor_public_key, get_specific_private_key, get_specific_public_key
 
 from .gen_files import file_to_library, file_to_cwd
@@ -26,5 +26,7 @@ __all__ = [
     "get_local_ip",
     "mydata",
 
-    "CookieGrabber"
+    "CookieGrabber",
+
+    "SecureFileCryptoStream",
 ]

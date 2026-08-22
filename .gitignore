@@ -30,6 +30,11 @@ pip-log.txt
 pip-delete-this-directory.txt
 
 # =========================
+#  Python Packaging
+# =========================
+*.whl
+
+# =========================
 #  Secrets / Config
 # =========================
 .env

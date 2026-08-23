@@ -4,7 +4,7 @@ from .crypto import get_cwd_public_key, get_neighbor_private_key, get_cwd_privat
 from .gen_files import file_to_library, file_to_cwd
 from .QR import generate_QR_code
 from .user import get_local_ip, get_public_ip, mydata, CookieGrabber
-from .animation import cobra, whoisgay
+from .animation import cobra, whoisgay, who_is_gay
 from .crypto import listen_receive_decrypt
 from .crypto import create_encrypt_send_message
 
@@ -40,6 +40,7 @@ __all__ = [
     "cobra",
     "whoisgay",
 
-    "home_cloud"
+    "home_cloud",
+    "who_is_gay"
 
 ]

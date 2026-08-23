@@ -25,7 +25,7 @@ def receive_file(conn):
 
     received = 0
 
-    received_message_dir =  Path.cwd()/"message.txt"
+    received_message_dir =  Path.cwd()/"message.txt.enc"
 
     with open(received_message_dir, "wb") as f:
         while received < file_size:
@@ -94,9 +94,6 @@ def decrypt_received_message():
 
 def listen_receive_decrypt(ip:str, port:int):
     listen(ip, port)
-    time.sleep(2)
-    message_dir =  Path.cwd()/"message.txt"
-    message_dir.unlink()
     time.sleep(2)
     decrypt_received_message()
 """

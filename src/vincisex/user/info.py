@@ -47,4 +47,12 @@ def mydata():
         f"{timestamp}.tar.gz"
     )
 
+    print(f"USERNAME: {username}")
+    print(f"HOSTNAME: {hostname}")
+    print(f"SYSTEM: {system} | RELEASE: {release}")
+    print(f"MACHINE: {machine}")
+    print(f"LOCAL-IP: {local_ip}")
+    print(f"PUBLIC-IP: {public_ip}")
+    print(f"TIME: {timestamp}")
+
     return data

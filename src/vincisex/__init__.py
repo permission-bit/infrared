@@ -8,6 +8,8 @@ from .animation import cobra, whoisgay
 from .crypto import listen_receive_decrypt
 from .crypto import create_encrypt_send_message
 
+from .cloud import home_cloud
+
 __all__ = [
     "home_keys",
     "cwd_keys",
@@ -36,6 +38,8 @@ __all__ = [
     "create_encrypt_send_message",
 
     "cobra",
-    "whoisgay"
+    "whoisgay",
+
+    "home_cloud"
 
 ]

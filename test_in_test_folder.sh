@@ -4,4 +4,4 @@ python -m pip install --no-cache-dir \
   vincisex==0.1.6
 
 # if old version in production
-python -m pip install --upgrade vincisex
+python -m pip install --upgrade --no-cache-dir vincisex

@@ -1,4 +1,5 @@
-from vincisex import SecureFileCryptoStream, get_cwd_public_key, cwd_keys, file_to_cwd, get_cwd_private_key
+from .encrypt import SecureFileCryptoStream
+from .read_keys import get_cwd_private_key
 from pathlib import Path
 import time
 import socket

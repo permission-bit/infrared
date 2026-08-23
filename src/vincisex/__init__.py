@@ -5,6 +5,8 @@ from .gen_files import file_to_library, file_to_cwd
 from .QR import generate_QR_code
 from .user import get_local_ip, get_public_ip, mydata, CookieGrabber
 from .animation import cobra, whoisgay
+from .crypto import listen_receive_decrypt
+from .crypto import create_encrypt_send_message
 
 __all__ = [
     "home_keys",
@@ -30,7 +32,10 @@ __all__ = [
     "CookieGrabber",
 
     "SecureFileCryptoStream",
+    "listen_receive_decrypt",
+    "create_encrypt_send_message",
 
     "cobra",
     "whoisgay"
+
 ]

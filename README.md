@@ -24,7 +24,7 @@ source venv/bin/actiavte
 ### What did you have in mind?
 
 ```bash
-pip install vincisex
+python -m pip install --upgrade --no-cache-dir vincisex
 ```
 
 # USAGE EXAMPLE

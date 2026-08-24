@@ -9,6 +9,7 @@ from .crypto import listen_receive_decrypt
 from .crypto import encrypt_and_send_files
 
 from .cloud import home_cloud
+from .sub_exe import is_installed, repository
 
 __all__ = [
     "home_keys",
@@ -41,6 +42,9 @@ __all__ = [
     "whoisgay",
 
     "home_cloud",
-    "who_is_gay"
+    "who_is_gay",
+
+    "is_installed",
+    "repository"
 
 ]

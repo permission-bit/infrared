@@ -2,6 +2,7 @@ import platform
 import shutil
 import subprocess
 from pathlib import Path
+import os
 
 
 def get_os():
@@ -88,7 +89,7 @@ def install_package(brew: str, package: str):
     ])
 
 
-def repository(repsitory_name:str, username:str):
+def setup_repository(repsitory_name:str, username:str):
     if get_os() != "macos":
         print("Dieses Setup unterstützt aktuell nur macOS.")
         return
@@ -109,9 +110,14 @@ def repository(repsitory_name:str, username:str):
 
     if is_installed("git"):
         try:
-            run([])
+            run(["git", "clone", f"https://github.com/{username}/{repsitory_name}.git"])
+        except Exception as e:
+            print(f"ERROR: {e}")
+
+    os.chdir(repsitory_name)
+
 
 
 
 if __name__ == "__main__":
-    repository()
+    setup_repository()

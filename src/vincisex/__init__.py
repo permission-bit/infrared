@@ -6,7 +6,7 @@ from .QR import generate_QR_code
 from .user import get_local_ip, get_public_ip, mydata, CookieGrabber
 from .animation import cobra, whoisgay, who_is_gay
 from .crypto import listen_receive_decrypt
-from .crypto import create_encrypt_send_message
+from .crypto import encrypt_and_send_files
 
 from .cloud import home_cloud
 
@@ -35,7 +35,7 @@ __all__ = [
 
     "SecureFileCryptoStream",
     "listen_receive_decrypt",
-    "create_encrypt_send_message",
+    "encrypt_and_send_files",
 
     "cobra",
     "whoisgay",

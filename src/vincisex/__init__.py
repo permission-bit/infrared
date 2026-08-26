@@ -9,7 +9,9 @@ from .crypto import listen_receive_decrypt
 from .crypto import encrypt_and_send_files
 
 from .cloud import home_cloud
-from .sub_exe import is_installed, repository
+from .sub_exe import is_installed, run, run_capture, get_os
+from .get import http
+from .GitHub import clone_repo
 
 __all__ = [
     "home_keys",
@@ -45,6 +47,11 @@ __all__ = [
     "who_is_gay",
 
     "is_installed",
-    "repository"
+    "run",
+    "run_capture",
+    "get_os",
+
+    "http",
+    "clone_repo"
 
 ]

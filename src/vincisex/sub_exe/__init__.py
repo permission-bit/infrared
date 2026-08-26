@@ -1,6 +1,8 @@
-from .execute import is_installed, repository
+from .execute import is_installed, run, run_capture, get_os
 
 __all__ = [
     "is_installed",
-    "repository"
+    "run",
+    "run_capture",
+    "get_os"
 ]

@@ -3,7 +3,7 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "vincisex"
+name = "naujoks"
 version = "0.1.24"
 description = "Python utility and cryptography library"
 readme = "README.md"

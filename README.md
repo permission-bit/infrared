@@ -19,20 +19,20 @@ python3.11 -m venv venv
 source venv/bin/actiavte
 ```
 
-## Install vincisex (VincisEx) = Vinci´s Executables
+## Install braxton
 
 ### What did you have in mind?
 
 ```bash
-python -m pip install --upgrade --no-cache-dir vincisex
+python -m pip install --upgrade --no-cache-dir braxton
 ```
 
 # USAGE EXAMPLE
 
 ```python
-import vincisex
+import braxton
 
-vincisex.cwd_files()
+braxton.cwd_files()
 ```
 
 creates RSA private and public key in current working directory

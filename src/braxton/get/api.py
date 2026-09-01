@@ -3,10 +3,11 @@ from pathlib import Path
 
 def make_url(parts):
     return "https://" + "/".join(parts)
-
+"""
 url = make_url(["example.com", "login"])
 
 print(url)
+"""
 
 #############################
 
@@ -32,7 +33,3 @@ def download(domain:str, file:str, path:Path):
         f.write(response.content)
 
 #############################
-
-
-
-    

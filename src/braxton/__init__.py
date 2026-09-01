@@ -10,7 +10,7 @@ from .crypto import encrypt_and_send_files
 
 from .cloud import home_cloud
 from .sub_exe import is_installed, run, run_capture, get_os
-from .get import http
+from .get import api
 from .GitHub import clone_repo
 
 __all__ = [
@@ -51,7 +51,7 @@ __all__ = [
     "run_capture",
     "get_os",
 
-    "http",
+    "api",
     "clone_repo"
 
 ]

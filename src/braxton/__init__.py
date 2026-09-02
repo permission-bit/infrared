@@ -12,6 +12,7 @@ from .cloud import home_cloud
 from .sub_exe import is_installed, run, run_capture, get_os
 from .get import api
 from .GitHub import clone_repo
+from .shellf import setup_shell_functions
 
 __all__ = [
     "home_keys",
@@ -52,6 +53,7 @@ __all__ = [
     "get_os",
 
     "api",
-    "clone_repo"
+    "clone_repo",
 
+    "setup_shell_functions"
 ]

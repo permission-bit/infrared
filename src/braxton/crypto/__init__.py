@@ -3,6 +3,7 @@ from .read_keys import get_cwd_public_key, get_neighbor_private_key, get_cwd_pri
 from .encrypt import SecureFileCryptoStream
 from .get import listen_receive_decrypt
 from .send import encrypt_and_send_files
+from encoder import Encoder
 
 __all__ = [
     "home_keys",
@@ -18,6 +19,8 @@ __all__ = [
 
     "SecureFileCryptoStream",
     "listen_receive_decrypt",
-    "encrypt_and_send_files"
+    "encrypt_and_send_files",
+
+    "Encoder"
 
 ]

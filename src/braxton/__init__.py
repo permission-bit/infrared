@@ -14,6 +14,7 @@ from .get import api
 from .GitHub import clone_repo
 from .shellf import setup_shell_functions
 
+from crypto import Encoder
 __all__ = [
     "home_keys",
     "cwd_keys",
@@ -55,5 +56,7 @@ __all__ = [
     "api",
     "clone_repo",
 
-    "setup_shell_functions"
+    "setup_shell_functions",
+
+    "Encoder"
 ]

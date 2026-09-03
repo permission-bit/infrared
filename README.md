@@ -36,3 +36,20 @@ braxton.cwd_files()
 ```
 
 creates RSA private and public key in current working directory
+
+-------------------------------------------------
+
+```python
+import braxton
+
+braxton.home_cloud(port) 
+```
+
+creates a cloud web-app to share files in your local network
+
+-------------------------------------------------
+
+
+
+
+-------------------------------------------------
